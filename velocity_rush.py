@@ -11,23 +11,23 @@ pygame.display.set_caption("Runner Final")
 clock = pygame.time.Clock()
 
 # Load assets
-bg = pygame.image.load("WEB Sem2/bg.png").convert()
+bg = pygame.image.load("final project/bg.png").convert()
 
-player_img = pygame.image.load("WEB Sem2/player1.png").convert_alpha()
+player_img = pygame.image.load("final project/player1.png").convert_alpha()
 player_img = pygame.transform.scale(player_img, (120, 120))
 
-player_jump = pygame.image.load("WEB Sem2/jump.png").convert_alpha()
+player_jump = pygame.image.load("final project/jump.png").convert_alpha()
 player_jump = pygame.transform.scale(player_jump, (120, 120))
 
-obstacle_img = pygame.image.load("WEB Sem2/obstacle.png").convert_alpha()
+obstacle_img = pygame.image.load("final project/obstacle.png").convert_alpha()
 obstacle_img = pygame.transform.scale(obstacle_img, (70, 90))
 
-coin_img = pygame.image.load("WEB Sem2/coin.png").convert_alpha()
+coin_img = pygame.image.load("final project/coin.png").convert_alpha()
 coin_img = pygame.transform.scale(coin_img, (30, 30))
 
-jump_sound = pygame.mixer.Sound("WEB Sem2/jump.wav")
-coin_sound = pygame.mixer.Sound("WEB Sem2/coin.wav")
-hit_sound = pygame.mixer.Sound("WEB Sem2/hit.wav")
+jump_sound = pygame.mixer.Sound("final project/jump.wav")
+coin_sound = pygame.mixer.Sound("final project/coin.wav")
+hit_sound = pygame.mixer.Sound("final project/hit.wav")
 
 player_rect = player_img.get_rect(midbottom=(80, 300))
 player_hitbox = pygame.Rect(0, 0, 30, 45)
